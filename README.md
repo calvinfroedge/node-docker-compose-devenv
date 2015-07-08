@@ -1,7 +1,8 @@
-Building:
+Modify docker-compose.yml.example and copy it to docker-compose.yml. You may want to change the location of the code to serve in the app, for example:
 
 ```
-docker-compose build
+volumes:
+  - ../appcode:/app
 ```
 
 Run:

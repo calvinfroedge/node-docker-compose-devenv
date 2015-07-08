@@ -3,7 +3,7 @@ api:
   ports:
     - "3000:3000"
   volumes:
-    - api/code:/app
+    - ../appcode:/app
   links:
     - db
 

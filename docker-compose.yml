@@ -1,0 +1,17 @@
+api:
+  build: ./api
+  ports:
+    - "3000:3000"
+  volumes:
+    - api/code:/app
+  links:
+    - db
+
+db:
+  image: sameersbn/postgresql:9.4-1
+  ports:
+    - "5432:5432"
+  environment:
+    - DB_USER=dev
+    - DB_PASS=dev
+    - DB_NAME=dev

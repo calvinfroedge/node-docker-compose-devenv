@@ -1,0 +1,15 @@
+{
+  "name": "node-dev",
+  "version": "0.0.1",
+  "dependencies": {
+  },
+  "devDependencies": {
+      "express": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "gulp test"
+  }
+}
